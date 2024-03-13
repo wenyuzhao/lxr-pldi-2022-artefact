@@ -3,7 +3,7 @@
 > The latest LXR's command line interface, features, and even algorithms have changed a lot.
 >
 > If you are using the latest LXR, please use one of the following CLI/env args to enable LXR:
-> * `java -XX:+UseThirdPartyHeap ThirdPartyHeapOptions=plan=LXR -XmsXXXM -XmxXXXM ...`
+> * `java -XX:+UseThirdPartyHeap -XX:ThirdPartyHeapOptions=plan=LXR -XmsXXXM -XmxXXXM ...`
 > * `MMTK_PLAN=LXR java -XX:+UseThirdPartyHeap -XmsXXXM -XmxXXXM ...`
 
 We ship our artifact as a docker image, containing the pre-built OpenJDK builds (with LXR GC) and all necessary benchmarks for evaluation.
